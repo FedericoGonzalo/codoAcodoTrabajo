@@ -1,0 +1,33 @@
+
+
+@media screen and (max-width:640px) {
+   body{
+
+    font-size: 1rem;
+    flex-wrap: 6rem;
+   }
+    header{
+      
+    background-color: red;
+
+}
+h1{
+    font-size: 1rem;
+}
+nav{
+    
+    background-color: aqua;
+    font-size: 1rem;
+}
+footer{
+    background:red;
+}
+}
+
+@media screen and (min-width:640px) and (max-width:1024px){
+    
+}
+
+@media screen and (min-width:1024px) {
+   
+}
