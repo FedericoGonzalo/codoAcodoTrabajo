@@ -1,33 +1,280 @@
 
+*{ font-family: "Audiowide", sans-serif;
+    padding: 0.5rem;
+    
+    max-width: 87.5rem;
+}
+body{
+  background-color:rgb(218, 234, 245) ;  
+}
+@keyframes cambiarColorFondoHeader {
+    0%{background-color: rgb(214, 135, 175);}
+   50% {background-color: rgb(109, 81, 101);}
+   100%{background-color: rgb(214, 135, 175);}
+    }
+    @keyframes cambiarColorFontHeader {
+        0%{color: rgb(70, 68, 68);}
+       50% {color: rgb(223, 191, 214);}
+       100%{color: rgb(70, 68, 68);}
+        }   
 
-@media screen and (max-width:640px) {
-   body{
+header{
+    border:0.16rem solid rgb(133, 95, 138);
+    background-color: rgb(214, 135, 175);
+    animation-name: cambiarColorFondoHeader;
+  
+animation-duration:50s ;
+ 
+animation-iteration-count: infinite;
+}
+header h1{
+    animation-name: cambiarColorFontHeader;
+    animation-duration:50s ;
 
-    font-size: 1rem;
-    flex-wrap: 6rem;
-   }
-    header{
+animation-iteration-count: infinite;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button ,#botonEnviar{
+    border-width: 0.09rem;
+    border-radius: 0.5rem;
+}
+
+section p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*-----*/
+@media screen  and (max-width:500px) {
+    body{
+     
+        width:90%;
+       font-size: 1rem; 
+     }
+     
+     
+       nav{
+     
+       
+       display: none;
+     }
+   
       
-    background-color: red;
+     
+       header{
+           border-radius: 0.5rem;
+           display: flex;
+           flex-wrap: nowrap;
+            background-color: rgb(214, 135, 175);
+            margin: auto;
+   
+           
+   }
+   #fraseHeader {
+   display:none;
+   }
+   
+      
+   }
+   main{
+      
+       border-radius: 0.5rem;
+       border:0.12rem solid rgb(115, 89, 156);
+       margin-top: 0.25rem;
+       margin-bottom: 0.25rem;
+       margin-left: 0.5rem;
+       margin-right: 0.5rem;
+   }
+   section{
+   
+       border-radius: 0.5rem;
+      
+       border:0.10rem solid rgb(139, 179, 175);
+       margin-bottom: 1rem;
+     
+   }
+   section:nth-child(2n){
+       background-color: rgb(206, 241, 230);
+   
+   }
+   section button {
+     
+       background-color:rgb(230, 209, 216);
+   }
+   #secondSection{
+       display: flex;
+       flex-direction: column;
+       
+       
+   }
+   #thirdSection{
+       display: flex;
+       flex-direction: column;
+      
+   }
+   #botonEnviar{
+       
+       background-color:rgb(230, 209, 216);
+   }
+   
+   
+   iframe{
+      margin-left: 10%; 
+     
+      
+     background-color: rgb(119, 54, 133);
+   
+       border:0.10rem solid rgb(173, 147, 172);
+       width: 75%;
+   }
+   
+   
+   footer{
+       width: 90%;
+       padding-right: -5rem;
+       display:inline-flex;
+       justify-content: space-around;
+       border-radius: 0.5rem;
+       
+        
+           background-color: rgb(228, 24, 126);
+   }
+   
+   
+   
+   footer button{
+       border-width: 0.1rem;
+       border-radius: 0.6rem;
+       background-color: rgb(119, 54, 133);
+   }
 
-}
-h1{
-    font-size: 1rem;
-}
-nav{
+
+/*-----*/
+@media screen and (min-width:501px) and (max-width:770px) {
+   body{
+     
+     width:90%;
+    font-size: 1rem; 
+  }
+  
+  
+    nav{
+  
     
-    background-color: aqua;
+    display: none;
+  }
+
+   
+  
+    header{
+        border-radius: 0.5rem;
+        display: flex;
+        flex-wrap: nowrap;
+         background-color: rgb(214, 135, 175);
+         margin: auto;
+
+        
+}
+#fraseHeader {
+ background-image: url("https://thumbs.dreamstime.com/b/fondo-de-madera-de-la-hierba-del-gnomo-37269757.jpg");
+ opacity: 0.4;
+ font-family: monospace; 
+font-size: 2rem;
+background-repeat: no-repeat;
+  background-size : cover;
+  border-radius: 0.5rem;
+  
+}
+#fraseHeader p{
+    padding-right: 15%;
+    font-family: monospace; 
+    font-weight: bolder;
     font-size: 1rem;
-}
-footer{
-    background:red;
-}
+    color: lavenderblush;
+
 }
 
-@media screen and (min-width:640px) and (max-width:1024px){
-    
-}
-
-@media screen and (min-width:1024px) {
    
 }
+main{
+   
+    border-radius: 0.5rem;
+    border:0.12rem solid rgb(115, 89, 156);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+section{
+
+    border-radius: 0.5rem;
+   
+    border:0.10rem solid rgb(139, 179, 175);
+    margin-bottom: 1rem;
+  
+}
+section:nth-child(2n){
+    background-color: rgb(206, 241, 230);
+
+}
+section button {
+  
+    background-color:rgb(230, 209, 216);
+}
+#secondSection{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+#thirdSection{
+    display: flex;
+    flex-direction: column;
+   
+}
+#botonEnviar{
+    
+    background-color:rgb(230, 209, 216);
+}
+
+
+iframe{
+   margin-left: 10%; 
+  
+   
+  background-color: rgb(119, 54, 133);
+
+    border:0.10rem solid rgb(173, 147, 172);
+    width: 75%;
+}
+
+
+footer{
+    width: 90%;
+    padding-right: -5rem;
+    display:inline-flex;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    
+     
+        background-color: rgb(228, 24, 126);
+}
+
+
+
+footer button{
+    border-width: 0.1rem;
+    border-radius: 0.6rem;
+    background-color: rgb(119, 54, 133);
+}
+
+
+
+
+
+/*-----*/
