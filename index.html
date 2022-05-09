@@ -27,28 +27,10 @@
         
           <div id="fraseHeader"><p>Gnomos al servicio de usted o quizas de otro, who knows? </p></div>
         
+       <div>
+           
+       </div>
        
-         <nav>
-             
-               <h3>
-                 <a href="#firstSection">Que o quienes somos</a>
-                </h3> 
-                
-                <h3>
-                    <a href="#secondSection">Nuestros servicios
-
-                    </a>
-                </h3> 
-                <h3>
-                    <a href="#thirdSection">
-                        Nuestros servicios
-
-                    </a> 
-                 </h3> 
-                <h3
-                ><a href="#thirdSection">Nuestros servicios</a>  
-                </h3> 
-            </nav>
     </header>
     
     <main>
@@ -70,7 +52,16 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore molestias rem illo ipsum blanditiis dolorem praesentium voluptatibus quaerat debitis amet? Sint quisquam voluptatem id dolorum ea non harum, voluptates quidem!
         Consequuntur et a eaque neque enim ipsam explicabo natus, animi delectus totam repellendus quaerat recusandae at cum placeat quod. Iusto, quas accusamus excepturi possimus facilis error eum dicta repudiandae aliquid?</p> 
           </div>
-<span><img src="" alt=""></span>
+
+</div>
+<h3>Problematicas ontologicas porsistentes</h3>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore molestias rem illo ipsum blanditiis dolorem praesentium voluptatibus quaerat debitis amet? Sint quisquam voluptatem id dolorum ea non harum, voluptates quidem!
+        Consequuntur et a eaque neque enim ipsam explicabo natus, animi delectus totam repellendus quaerat recusandae at cum placeat quod. Iusto, quas accusamus excepturi possimus facilis error eum dicta repudiandae aliquid?</p> 
+          </div>
+
+</div>
+   
 
           <span>
               <button>
@@ -97,25 +88,23 @@
         </section>
         
         <section id="forthSection"> 
-            <h3>Quiza quiera saber mas de nosotros  </h3>
+          <div>
+              <h3>Quiza quiera saber mas de nosotros  </h3>
             <p>Un simple formulario que quiza llenen quizas no</p>
-            <form action="enviar.php" method="post" >
-             
-                    <label for="nombre">Su nombre</label>
-                    <i class="fas fa-user"></i>
-
-             
-                    
+           </div> 
+            <form  >
+             <div>
+                 <label for="nombre">Su nombre <i class="fas fa-user"></i></label>
+                  
                     <input
                         type="text"
                         name="nombre"
                         id="nombreDeQuienConsulta"
                         placeholder="Escriba su nombre">
-
-<br>
-               
-                    <label for="apellido">Su apellido</label>
-                    <i class="fas fa-user"></i>
+             </div>   
+             <div>
+                 <label for="apellido">Su apellido<i class="fas fa-user"></i></label>
+                    
 
              
                     
@@ -124,10 +113,9 @@
                         name="apelldio"
                         id="apellidoDeQuienConsulta"
                         placeholder="Escriba su apellido">
-<br>
-                       
-                            <label for="mail">Su correo </label>
-                            <i class="fa-solid fa-envelope"></i>
+            </div>
+             <div>    <label for="mail">Su correo  <i class="fa-solid fa-envelope"></i></label>
+                           
         
                       
                             
@@ -136,9 +124,10 @@
                                 name="mail"
                                 id="mailDeQuienConsulta"
                                 placeholder="Escriba su mail">
-             <br>                
-                                    <label for="mail">Su consulta</label>
-                                    <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+             <div>
+                                    <label for="consulta">Su consulta<i class="fa-solid fa-bars-staggered"></i></label>
+                                    
            
                              
                                <input
@@ -146,10 +135,13 @@
                                name="consulta"
                                id="consulta"
                                placeholder="Escriba su consulta">
+              </div>
+                    
+        
+                        <span>
+                                  <input onclick="mensajeEnvio()" type="submit" id="botonEnviar" value="Enviar este formulario" />
+                        </span>   
                                 
-                             
-                                <input type="submit" id="botonEnviar" value="Enviar este formulario" />
-                        
             </form>
         </section>
 
@@ -160,13 +152,13 @@
     <footer id="footer">
         <span><button><a href="#header" >HOME</a></button></span>
              <address>
-            
-          <span> CORREO ELECTRONICO <a href="mailto:mail@gmail.com"><i class="fa-solid fa-envelope"></i></a></span> 
+            <div><a href="mailto:mail@gmail.com">CORREO ELECTRONICO</a></div>
+          
         </address>
  
        
     </footer>
-  <script src="text/javaScript.js"></script>             
-</body>
+  <script src="text/script.js"></script>     
+ </body>
 
 </html>
