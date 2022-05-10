@@ -92,57 +92,90 @@
               <h3>Quiza quiera saber mas de nosotros  </h3>
             <p>Un simple formulario que quiza llenen quizas no</p>
            </div> 
-            <form  >
-             <div>
-                 <label for="nombre">Su nombre <i class="fas fa-user"></i></label>
-                  
-                    <input
-                        type="text"
-                        name="nombre"
-                        id="nombreDeQuienConsulta"
-                        placeholder="Escriba su nombre">
-             </div>   
-             <div>
-                 <label for="apellido">Su apellido<i class="fas fa-user"></i></label>
-                    
 
-             
+            <div class="container">
+
+                <form id="form">
+
+                    <div class="titulo">Escribenos</div>
                     
-                    <input
-                        type="text"
-                        name="apelldio"
-                        id="apellidoDeQuienConsulta"
-                        placeholder="Escriba su apellido">
-            </div>
-             <div>    <label for="mail">Su correo  <i class="fa-solid fa-envelope"></i></label>
-                           
-        
-                      
-                            
-                            <input
-                                type="text"
-                                name="mail"
-                                id="mailDeQuienConsulta"
-                                placeholder="Escriba su mail">
-            </div>
-             <div>
-                                    <label for="consulta">Su consulta<i class="fa-solid fa-bars-staggered"></i></label>
-                                    
-           
-                             
-                               <input
-                               type="text"
-                               name="consulta"
-                               id="consulta"
-                               placeholder="Escriba su consulta">
-              </div>
+                    <div>
+                        <label for="nombreDeUsuario">Nombre </label>
+                        <i class="fas fa-user"></i>
+    
+                          <input
+                            type="text"
+                            name="username"
+                            id="nombre"
+                            placeholder="Escriba su nombre"/>
+                                                               
+    
+                          <i class="fas fa-exclamation-circle failure-icon"></i>
+                          <i class="far fa-check-circle success-icon"></i>
+    
+                                  <div class="error"></div>
+                    </div>
+
+
+                    <div>
+                        <label for="apellidoDeUsuario"> Apellido</label>
+                        <i class="fas fa-user"></i>
+    
+                          <input
+                            type="text"
+                            name="usersurname"
+                            id="apellido"
+                            placeholder="Escriba su apellido"/>
+                                                               
+    
+                          <i class="fas fa-exclamation-circle failure-icon"></i>
+                          <i class="far fa-check-circle success-icon"></i>
+    
+                                  <div class="error"></div>
+                    </div>
+
+                    <div>
+                        <label for="correoElectronico">Correo Electrónico</label>
+                         <i class="far fa-envelope"></i>
+                         
+                         <input
+                             type="email"
+                             name="email"
+                             id="correo"
+                             placeholder="Escriba su correo electronico" />
+                        
+                            <i class="fas fa-exclamation-circle failure-icon"></i>
+                            <i class="far fa-check-circle success-icon"></i>
+                         
+                         <div class="error"></div>
+                    </div>
+                  
+                  
+                    <div>
+                        <label for="textoDeUsuario"> Texto</label>
+                        <i class="fa-solid fa-pen-nib"></i>
+    
+                          <input
+                            type="text"
+                            name="usertext"
+                            id="texto"
+                            placeholder="Escriba su texto"/>
+                                                               
+    
+                          <i class="fas fa-exclamation-circle failure-icon"></i>
+                          <i class="far fa-check-circle success-icon"></i>
+    
+                     <div class="error"></div>
+                    </div>
                     
-        
-                        <span>
-                                  <input onclick="mensajeEnvio()" type="submit" id="botonEnviar" value="Enviar este formulario" />
-                        </span>   
-                                
-            </form>
+                    <button id="btn"  type="submit">Enviar</button>
+                </form>
+                
+            </div>
+    
+
+       
+       
         </section>
 
    
@@ -150,7 +183,8 @@
     
 
     <footer id="footer">
-        <span><button><a href="#header" >HOME</a></button></span>
+        
+        <span><a href="#header" ><button>HOME</button></a></span>
              <address>
             <div><a href="mailto:mail@gmail.com">CORREO ELECTRONICO</a></div>
           

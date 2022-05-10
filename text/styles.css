@@ -2,15 +2,16 @@
 *{ 
    
     padding: 0.5rem;
-    
+    padding-left: 1rem;
     max-width: 87.5rem;
+    box-sizing: border-box;
 }
 
 
 @keyframes cambiarColorFondoHeader {
     0%{background-color: rgb(86, 209, 247);}
    50% {background-color: rgb(135, 233, 228);}
-   100%{background-color: rgb(193, 230, 230);}
+   100%{background-color: rgb(89, 104, 104);}
     }
     @keyframes cambiarColorFontHeader {
         0%{color: rgb(70, 68, 68);}
@@ -41,6 +42,7 @@ a {
     text-decoration: none;
 }
 section{
+  
     background-color:rgb(182, 202, 216);
 }
  
@@ -113,16 +115,9 @@ section{
        background-color: rgb(206, 241, 230);
    
    }
-   section button {
-    border-width: 0.09rem;
-    border-radius: 0.5rem;
-    
-       background-color:rgb(230, 209, 216);
-   }
-   section form{
-    font-family: "Audiowide", sans-serif;
-       
-   }
+  
+   
+
    #secondSection{
        display: flex;
        flex-direction: column;
@@ -137,12 +132,92 @@ section{
    #thirdSection h4 ,ol,li{
     font-family: "Audiowide", sans-serif;
    }
+
+   /* formulario styles  */
   
-   #botonEnviar{
-     background-color:rgb(230, 209, 216);
-    border-width: 0.09rem;
+  
+   form {
+  
+  
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:100rem;
+    
+    padding:4rem;
+  }
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  form div input {
+    width: 90%;
+    height: 3.4rem;
     border-radius: 0.5rem;
-}
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 2rem;
+    box-shadow: 2px 2px 0.25rem rgba(0, 0, 0, 0.1);
+  }
+
+  form div {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  input:focus {
+    border: 2px solid #a0cafa;
+  }
+  form div i {
+    position: absolute;
+    padding: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+
+  .success-icon,
+  .failure-icon {
+    right: 0;
+    opacity: 0;
+  }
+  button {
+    margin-top: 1rem;
+    margin-left: 5%;
+    width: 80%;
+    height: 45px;
+   background-color: #bfd6f3;
+    border: 2px solid #96d9f3;
+    border-radius: 8px;
+     color: rgb(78, 62, 62); 
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+  }
+  button:hover {
+    opacity: 0.6;
+  }
+ 
+/*-*/
    
    iframe{
       margin-left: 10%; 
@@ -154,26 +229,21 @@ section{
        width: 75%;
    }
    
-   .classImg{
-    display: none;
-
-}
+   
  
 
  footer{
-    margin-left: 3%; 
+
     
-       width: 90%;
-       display:inline-flex;
-       justify-content: center;
+     
+       display:flex;
+       
+       justify-self: center;
+       
        border-radius: 0.5rem;
        background-color: rgb(172, 201, 228);
    }
-     footer button{
-       border-width: 0.1rem;
-       border-radius: 0.6rem;
-       background-color: rgb(221, 221, 247);
-   }
+   
    /*-----*/
 
    @media screen and  (max-width:382px){
@@ -325,30 +395,19 @@ section:nth-child(2){
 }
 #forthSection{
     grid-area:d;
-    display:flex;
-    align-items: center;
+    
+    
 
 }
-#forthSection form{
-    margin-left: 15rem;
-}
+
 #footer{
     grid-area: ft;
-    display:flex;
-    align-items: center;
+  
 
 
 }
 section{
     background-color: rgb(206, 241, 230);
-}
-main button:hover{
-    width: 22%;
-    background-color: azure;
-
-}
-#botonEnviar:hover{
-    background-color: azure;
 }
 
 }
