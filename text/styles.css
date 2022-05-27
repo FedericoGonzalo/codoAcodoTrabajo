@@ -216,7 +216,9 @@ section{
   button:hover {
     opacity: 0.6;
   }
- 
+ #footer i:hover{
+    transform: scale(2.5);
+ }
 /*-*/
    
    iframe{
@@ -233,13 +235,11 @@ section{
  
 
  footer{
-
+    display: flex;
+    justify-content: center;
+    
     
      
-       display:flex;
-       
-       justify-self: center;
-       
        border-radius: 0.5rem;
        background-color: rgb(172, 201, 228);
    }
@@ -282,9 +282,7 @@ h3 ,h4{
     #forthSection{
         display:none;
     }    
-    footer button{
-        display: none;
-    } 
+   
 #firstSection button {
     display:none;
 }
@@ -402,7 +400,8 @@ section:nth-child(2){
 
 #footer{
     grid-area: ft;
-  
+    font-family: monospace; 
+    font-size: 1rem;
 
 
 }
@@ -410,4 +409,19 @@ section{
     background-color: rgb(206, 241, 230);
 }
 
+}
+
+
+footer{
+    font-family: monospace; 
+    font-size: 1rem;
+
+}
+
+
+.iconFoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
